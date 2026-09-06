@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: teal;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: thistle;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em <strong>JavaScript</strong></p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName("p")[0]
+        p1.style.color = 'blueviolet'
+        corpo.style.background = 'black'
+
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'blue'
+</script>
+</body>
+</html>
