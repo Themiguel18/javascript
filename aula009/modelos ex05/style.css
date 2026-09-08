@@ -7,7 +7,7 @@ body{
 }
 header{
     text-align: center;
-    color: wheat;
+    color: black;
 }
 
 section{
@@ -17,6 +17,19 @@ section{
     width: 500px;
     margin: auto;
     box-shadow: 5px 5px 10px black;
+}
+
+div{
+    text-align: center;
+    padding: 5px;
+}
+
+div img{
+    border-radius: 50%;
+}
+
+p{
+    color: black;
 }
 
 footer{
