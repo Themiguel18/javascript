@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        body,html{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            background-color: wheat;
+        }
+        h1{
+            border-bottom: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de usuário</h1>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Dados</legend>
+            <p><input type="text" name="txt" id="txt" placeholder="Digite o seu nome"></p>
+            <p><input type="password" name="pass" id="pass" placeholder="Senha"></p>
+            <input type="submit" value="enviar" onclick="teste()">
+            <input type="reset" value="Limpar">
+        </fieldset>
+    </form>
+    <script>
+        var txt = window.document.getElementById('txt')
+        var pass = window.document.getElementById('pass')
+        function teste(){
+            var txt = 'jose'
+            if(txt == 'jose'){
+                window.alert('Nome de usuário correto')
+            }else{
+                window.alert('Nome de usuário incorreto')
+            }
+        }
+    </script>
+</body>
+</html>
