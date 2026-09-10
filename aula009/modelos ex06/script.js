@@ -30,6 +30,7 @@ function verificar(){
                 // Idoso
                 img.setAttribute('src', 'idoso.jpg')
                 res.innerHTML = `Detectamos um idoso com ${idade} anos`
+                
             }
         }else if(fsex[1].checked){
             genero = 'Mulher'
