@@ -6,7 +6,7 @@ function verificar(){
     if(fano.value.length == 0 || fano.value > ano){
         alert('ERROR')
     }else{
-        var fsex = document.getElementsByName('radiosex')
+        var fsex = document.getElementsByName('radiosex') 
         var idade = ano - Number(fano.value)
         res.innerHTML = `Idade calculada ${idade}`
         var genero = ''
