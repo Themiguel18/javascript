@@ -1,0 +1,10 @@
+let num = [3, 2, 6, 1, 5]
+num.push(4)
+num.sort()
+for(let v in num)
+    console.log(num[v])
+console.log(num)
+console.log(`O vector tem ${num.length} posicoes` )
+console.log(`O primeiro valor do vector e ${num[0]}`)
+let pos = num.indexOf(4)
+console.log(`O valor 4 esta na posicao ${pos}`)

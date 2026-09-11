@@ -1,0 +1,10 @@
+let n1 = 2
+let n2 = 3
+let s = n1 + n2
+let sb = n1 - n2
+let m = n1 * n2
+let d = n1 / n2
+console.log(`${n1} + ${n2} = ${s}`)
+console.log(`${n1} - ${n2} = ${sb}`)
+console.log(`${n1} X ${n2} = ${m}`)
+console.log(`${n1} / ${n2} = ${d}`)
