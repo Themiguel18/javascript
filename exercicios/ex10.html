@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+            background-color: azure;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+        section{
+          
+            padding: 50px 100px;
+            background-color: rgb(235, 226, 235);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Verificador de senha</h1>
+        <p><input type="password" name="senha" id="senha"> <button onclick="verificar()">Login</button></p>
+    </section>
+
+    <script>
+        function verificar(){
+            let s = document.getElementById('senha')
+            let sen = 'atutu123'
+            if(s.value.length == 0){
+                alert('Digite a senha seu palhaço')
+            }else if(s.value == sen){
+                alert('Acesso permitido')
+            }else{
+                alert('Acesso negado')
+            }
+        }
+    </script>
+</body>
+</html>
