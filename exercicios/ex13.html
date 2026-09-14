@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+            background-color: rosybrown;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        div#res{
+            border: 1px solid black;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabuada</h1>
+    <p><input type="number" name="tab" id="tab" placeholder="Digite um número"> <button onclick="tab()">gerar</button></p>
+    <div id="res"></div>
+    <script>
+        function tab(){
+            let t = document.getElementById('tab')
+            let txt = document.getElementById('res')
+            if(t.value.length == 0){
+                alert('Digite um valor seu desgraçado')
+            }else{
+                let c = Number(t.value)
+                for(let n = 1; n <= 12; n++){
+                    let mult = c*n
+                    txt.innerHTML += `${c} X ${n} = ${mult} <br>`
+                }
+            }
+        }
+    </script>
+</body>
+</html>
