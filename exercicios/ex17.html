@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+            background-color: navajowhite;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-weight: 300;
+            color: white;
+        }
+        h1 span{
+            font-weight: 700;
+            background-color: oldlace;
+            color: black;
+            padding: 5px 15px;
+        }
+        div#res{
+            border: 1px solid black;
+            padding: 5px 10px;
+        }
+        button{
+            background-color: transparent;
+        }
+        button:hover{
+            color: white;
+            background-color: black;
+            transition: .5s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversor de <span>temperatura</span></h1>
+    <p>Temperatura em celcius <input type="number" name="m1" id="m1"> <button onclick="converter()">converter</button></p>
+    <div id="res"></div>
+    <script src="temperatura.js"></script>
+</body>
+</html>
