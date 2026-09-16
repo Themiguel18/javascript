@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body, html{
+            background-color: rosybrown;
+        }
+    </style>
 </head>
 <body>
     <h1>Calculadora</h1>
-    <h4>Escolha uma operação <input type="text" name="op" id="op" placeholder=""></h4>
+    <p> Número <input type="number" name="n1" id="n1"></p> 
+
+    Número <input type="number" name="n2" id="n2">
+
+    <h4>Escolha uma operação <input type="text" name="op" id="op" placeholder="+ - * /"> <button onclick="calcular()">Calcular</button></h4>
+    <div id="res"></div>
+    <script src="interacao.js"></script>
 </body>
 </html>
