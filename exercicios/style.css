@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    background-color: wheat;
+   
+}
+
+section.hero {
+   width: 500px;
+    height: 400px;
+    padding: 20px 20px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+section.hero div.painel{
+    width: 100%;
+    height: 100%;
+}
+
+section.hero div.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+div.header button{
+    padding: 9px 9px;
+    border-radius: 100px;
+    border: none;
+    background-color: rgb(150, 243, 150);
+    color: green;
+}
+
+div.number{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+h1{
+    font-size: 3.5em;
+    color: olivedrab;
+}
+
+div.number p{
+    align-self: flex-end;
+    margin-bottom: 18px;
+}
+
+#range {
+    width: 100%;
+    margin-top: 50px;
+   
+}
+
+.range {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+#range::-webkit-slider-runnable-track {
+    height: 17px;
+    background: linear-gradient(to right, rgb(1, 1, 59), rgb(103, 103, 228), yellow, rgb(226, 226, 125), rgb(240, 240, 171));
+    border-radius: 10px;
+  
+}
+
+section.hero div.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    color: rgb(1, 1, 59);
+    
+}
+
+section.hero div.footer div{
+    border: 1px solid black;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: transparent;
+}
