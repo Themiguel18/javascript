@@ -1,18 +1,20 @@
-let num = document.querySelector('input#fnum')
-let lista = document.querySelector('select#flista')
-let res = document.querySelector('div#res')
+let num = document.getElementById('fnum')
+let lista = document.getElementById('flista')
+let res = document.getElementById('res')
 let valores = []
 
-function numer(){
-    if(Number(n) >= 1 && Number(n) <= 100){
+function n1(n){
+    if(n >= 1 && n <= 100){
         return true
     }else{
         return false
     }
+   
+
 }
 
-function list(){
-    if(i.indexOf(Number(n) != -1)){
+function i(n, l){
+    if(i.indexOf(n) != -1){
         return true
     }else{
         return false
@@ -20,7 +22,9 @@ function list(){
 
 }
 function adicionar(){
-    if(numer(num.value) && list(lista.value.valores)){
+    let numero = Number(num.value)
+    let l = Number(lista.value)
+    if(n1(numero) && !i(numero, valores)){
         alert('Tudo ok')
 
     }else{
