@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conversor de moedas</h1>
+    <div class="cambio">
+        <div class="origem">
+            <p>Escolha a sua moeda</p>
+            <select name="pais" id="pais">
+                <option value="angola">AOA</option>
+                <option value="europa">EUR</option>
+                <option value="brasil">BRL</option>
+                <option value="america">USD</option>
+            </select>
+        </div>
+        <div class="cambio2">
+            <select name="pais2" id="pais2">
+                <option value="angola">AOA</option>
+                <option value="europa">EUR</option>
+                <option value="brasil">BRL</option>
+                <option value="america">USD</option>
+            </select>
+        </div>        
+    </div>
+
+    <div class="moeda">
+        <p>Valor de origem <input type="number" name="m1" id="m1"> <button onclick="cambio()">converter</button></p>
+        <div id="res"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

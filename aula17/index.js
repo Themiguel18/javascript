@@ -1,8 +1,11 @@
-let v1 = '10'
-let v2 = 10
-let v3 = v1===v2
-let v4={nome: 'jose'}
-console.log(typeof(v1))
-console.log(typeof(v2))
-console.log(typeof(v3))
-console.log(typeof(v4))
+let num = 0
+const max = 1000
+while(num<=max){
+     console.log(num)
+    if(num>=10){
+       
+        break
+    }
+    console.log(num)
+    num++
+}console.log('Fim')
