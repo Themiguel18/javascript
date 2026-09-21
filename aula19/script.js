@@ -14,7 +14,10 @@ function cambio(){
         let conversao = v * 0.00556569
         resultado.innerHTML = `${v}kz é ${conversao}BRL`        
 
-    }
+    }else if((moeda.value === 'angola' ) && (troca.value === 'america')){
+        let conversao = v * 0.000948083 
+        resultado.innerHTML = `${v}kz é ${conversao}USD`   
+       }
 
        
 }

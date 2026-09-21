@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: yellowgreen;
+}
+
+h1 span{
+    color: rgb(2, 97, 2);
+}
+
+div.cambio{
+    display: flex;
+    gap: 20px;
+
+}
+
+div.cambio .origem{
+    display: flex;
+    gap: 5px;
+}
+
+div.cambio .cambio2{
+    display: flex;
+    gap: 5px;
+}
+
+div.moeda{
+    margin-top: 100px;
+}
+
+div.moeda button{
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 3px 3px;
+}
+
+div.moeda button:hover{
+    background-color: black;
+    color: green;
+}
+
+div#res{
+    text-align: center;
+    margin-top: 10px;
+    border: 1px solid black;
+}
