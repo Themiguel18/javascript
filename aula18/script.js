@@ -1,9 +1,13 @@
-function validar(){
-    let s = document.getElementById('senha')
-    if(s.value.length == 0){
-        alert('Digite a senha seu palhaço')
-    }else if(s.value.length < 8){
-        alert('Caracteres insuficientes')
-        
-    }                                                                                                                                                                                                                                                                                                
+// Arrow functions
+
+function maiorNumero(...numeros){
+    let maior = numeros[0]
+    for(let v of numeros){
+        if(v > maior){
+            maior = v
+        }
+    }
+    return maior
+
 }
+console.log(maiorNumero(2, 4, 48, 49))
