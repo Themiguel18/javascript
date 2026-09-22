@@ -26,7 +26,7 @@ function resultado(){
 
     }txt.innerHTML = `A soma de todos e ${r}`
 
-    let maior = res.options
+    let maior = res.options[0]
     if(maior < res.options){
         maior = res.options
     }txt.innerHTML = `O maior numero e ${maior}`
