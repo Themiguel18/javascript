@@ -1,10 +1,10 @@
 function* frequenciaFebonatti(){
-    let res = 0
+    let anterior = 0
     let atual = 1
     for(let c = 0; c<=Infinity; c++){
-        let proximo = res+atual
-        res++
-        atual++
+        let proximo = anterior+atual
+        anterior = atual
+        atual = proximo
         yield proximo
     }
 }
@@ -15,6 +15,7 @@ console.log(itf.next().value)
 console.log(itf.next().value)
 console.log(itf.next().value)
 console.log(itf.next().value)
+
 
 
 
