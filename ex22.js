@@ -1,4 +1,12 @@
-function* frequenciaFebonatti(){
+const precos = [1000, 2500, 3200, 500]
+
+const precosComDesconto = precos.map(preco => preco - (preco * 0.10))
+
+console.log(precosComDesconto)
+
+
+
+/*function* frequenciaFebonatti(){
     let anterior = 0
     let atual = 1
     for(let c = 0; c<=Infinity; c++){
@@ -19,7 +27,7 @@ console.log(itf.next().value)
 
 
 
-/*function* paresInfinito(){
+function* paresInfinito(){
   
         for(n=0; n<=Infinity; n++){
               if(n%2==0){
