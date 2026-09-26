@@ -1,3 +1,61 @@
+function* frequenciaFebonatti(){
+    let res = 0
+    let atual = 1
+    for(let c = 0; c<=Infinity; c++){
+        let proximo = res+atual
+        res++
+        atual++
+        yield proximo
+    }
+}
+
+let itf = frequenciaFebonatti()
+console.log(itf.next().value)
+console.log(itf.next().value)
+console.log(itf.next().value)
+console.log(itf.next().value)
+console.log(itf.next().value)
+
+
+
+/*function* paresInfinito(){
+  
+        for(n=0; n<=Infinity; n++){
+              if(n%2==0){
+            yield n
+        }
+    }
+}
+
+let itp = paresInfinito()
+console.log(itp.next().value)
+console.log(itp.next().value)
+console.log(itp.next().value)
+console.log(itp.next().value)
+
+
+
+function* contarAte(limite){
+    
+    for(let c=0; c<=limite; c++){
+        yield c
+    }
+}
+
+let itc = contarAte(10)
+console.log(itc.next().value)
+console.log(itc.next().value)
+console.log(itc.next().value)
+console.log(itc.next().value)
+console.log(itc.next().value)
+console.log(itc.next().value)
+console.log(itc.next().value)
+console.log(itc.next().value)
+console.log(itc.next().value)
+console.log(itc.next().value)
+console.log(itc.next().value)
+
+
 function criarConta(saldoInicial){
     let guadarSaldo = saldoInicial
     return {
@@ -23,7 +81,7 @@ console.log(conta.verSaldo())
 
 
 
-/*function multiplicar(n){
+function multiplicar(n){
 
 
 
