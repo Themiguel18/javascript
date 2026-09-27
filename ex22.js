@@ -1,12 +1,34 @@
+/*function* gerarQuadrados(n){
+    for(let c=0; c <= n; c++){
+        yield c**2
+    }      
+}
+
+let res = [...gerarQuadrados(10)].map(valores => valores + 1)
+console.log(res.join(' '))
+
+
+
+
+
+
+
+
+const utilizadores = [{nome: 'Luciano', idade: 19}, {nome: 'Miguel', idade: 20},]
+   const pegarNomes = utilizadores.map(nomes => nomes.nome)
+   console.log(pegarNomes)
+
+
+
 const precos = [1000, 2500, 3200, 500]
 
-const precosComDesconto = precos.map(preco => preco - (preco * 0.10))
+const precosComDesconto = precos.map(valor => valor - (valor * 0.10))
 
 console.log(precosComDesconto)
 
 
 
-/*function* frequenciaFebonatti(){
+function* frequenciaFebonatti(){
     let anterior = 0
     let atual = 1
     for(let c = 0; c<=Infinity; c++){
