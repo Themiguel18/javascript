@@ -1,58 +1,48 @@
+@charset "UTF-8";
+
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 
-html,body{
+
+
+main{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+main div.caixa{
+    border: 3px solid black;
+    width: 300px;
+    height: 500px;
+    padding: 0 20px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    background-color:  thistle;
+    background-color: rgb(214, 212, 212);
 }
 
-h1{
-    font-weight: 300;
-    margin-bottom: 5px;
-}
-
-h1 span{
-    font-weight: 700;
-    background-color: #000;
-    color: #fff;
-    padding: 0 5px;
-}
-
-div#res{
-    border: 1px solid black;
+main div.caixa div{
+    border: 3px solid black;
+    border-radius: 30px;
+    padding: 10px 10px;
+    margin-top: 5px;
     width: 200px;
-    margin-top: 10px;
-    padding-left: 5px;
+    text-align: center;
 }
 
-button{
-    background-color: transparent;
-    border: 1px solid black;
-    padding: 3px 3px;
-    
-}
-
-button:hover{
-    background-color: black;
-    color: #ffff;
-}
-
-select#lista{
-    background-color: transparent;
-    margin-left: 10px;
-}
-
-option{
-    background-color: #000;
+button#btn{
+    background-color: rgb(15, 69, 114);
     color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 25px 30px;
 }
 
