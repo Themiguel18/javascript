@@ -8,12 +8,6 @@ let res = [...gerarQuadrados(10)].map(valores => valores + 1)
 console.log(res.join(' '))
 
 
-
-
-
-
-
-
 const utilizadores = [{nome: 'Luciano', idade: 19}, {nome: 'Miguel', idade: 20},]
    const pegarNomes = utilizadores.map(nomes => nomes.nome)
    console.log(pegarNomes)
