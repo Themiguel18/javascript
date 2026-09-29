@@ -7,17 +7,15 @@
 }
 
 
-
 main{
-    width: 100vw;
-    height: 100vh;
+   
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    width: 100%;
 }
 
-main div.caixa{
+/* main div.caixa{
     border: 3px solid black;
     width: 300px;
     height: 500px;
@@ -27,22 +25,57 @@ main div.caixa{
     justify-content: center;
     align-items: center;
     background-color: rgb(214, 212, 212);
+} */
+
+.curso{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    border: 4px solid #888;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
 }
 
-main div.caixa div{
-    border: 3px solid black;
-    border-radius: 30px;
-    padding: 10px 10px;
-    margin-top: 5px;
-    width: 200px;
-    text-align: center;
-}
+
 
 button#btn{
     background-color: rgb(15, 69, 114);
     color: white;
     border: none;
+    cursor: pointer;
     border-radius: 20px;
-    padding: 25px 30px;
+    width: 150px;
+    height: 40px;
+}
+
+.selecionado{
+    
+    color: #fcc;
+    border-color: rosybrown;
+}
+
+.c1{
+    background-color: #ccc;
+    color: #444;
+}
+
+.c2{
+    background-color: #444;
+    color: #ccc;
+}
+
+.caixa{
+    border: 4px solid black;
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-flow: column ;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    height: 500px;
+    width: 300px;
 }
 

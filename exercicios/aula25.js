@@ -1,6 +1,7 @@
-const c1 = document.querySelector('#c1')
+const caixa1 = document.getElementById('caixa1')
+   const btn_c1 = document.getElementById('c1')
 
-
-c1.addEventListener('click',()=>{
-    alert('Clicou')
+caixa1.addEventListener('click', ()=>{
+    console.log('clicou')
 })
+
