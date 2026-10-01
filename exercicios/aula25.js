@@ -1,7 +1,15 @@
 const caixa1 = document.getElementById('caixa1')
-   const btn_c1 = document.getElementById('c1')
 
-caixa1.addEventListener('click', ()=>{
-    console.log('clicou')
+const curso = [...document.querySelectorAll('.curso')]
+
+caixa1.addEventListener('click', (evt)=>{
+    console.log('Clicou')
 })
 
+
+curso.forEach((el)=>{
+    el.addEventListener('click', (evt)=>{
+        evt.stopPropagation()
+    })  
+})
+ 
