@@ -29,6 +29,7 @@ header section.menu-mobile nav ul li{
 
 header section.menu-mobile nav ul li a{
     text-decoration: none;
+    color: black;
 }
 
 div.btn-mobile{
