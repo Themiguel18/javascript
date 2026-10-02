@@ -1,9 +1,7 @@
-let menuMobile = document.querySelector('#btn-mobile')
-let navMobile = document.querySelector('#menu-mobile')
+let inicio = document.querySelector('.inicio')
+let destaque = document.querySelector('.destaque')
 
-menuMobile.addEventListener('click', () => {
-
-    navMobile.classList.toggle('menu-mobile')
-
-
-})
+inicio.addEventListener('click', function() {
+    destaque.classList.toggle('destaque')
+    console.log(destaque.classList)
+})  
