@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body,html{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: baseline;   
+}
+
+input{
+    position: relative;
+}
+
+
+.item{
+    
+    margin-right: 200px;
+    margin-top: 5px;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px 0;
+    width: 100px;
+    text-align: center;
+    background-color: seagreen;
+    cursor: pointer;
+    
+    
+}
