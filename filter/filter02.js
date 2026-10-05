@@ -3,7 +3,10 @@ const btn_c=[...document.querySelectorAll('.cursos')]
 const c1_2=document.querySelector('#c1_2')
 const cursos = ['HTML','CSS','JavaScript','React','MySQL','Java']
 const btnRemoveCurso=document.getElementById('btnRemoverCurso')
+const btnAdicionarCurso=document.getElementById('btnAdicionarCurso')
 const btnCursoSelecionado=document.getElementById('btnCursoSelecionado')
+
+const nomeCurso=document.getElementById(`nomeCurso`)
 
 cursos.map((el,chave)=>{
     const novoElemento=document.createElement('div')
@@ -52,7 +55,17 @@ btnCursoSelecionado.addEventListener('click',(eve)=>{
     const rs=radioSelecionado()
     const cursoSelecionado=rs.parentNode.parentNode
     cursoSelecionado.remove()
-    
-    
-
 })
+
+
+
+btnAdicionarCurso.addEventListener('click', ()=>{
+     if(nomeCurso.value.length==0){
+         alert('digite uma cena seu palhaço')
+     }else{
+        
+     }
+})
+
+
+
