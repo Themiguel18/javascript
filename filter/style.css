@@ -34,13 +34,14 @@ button{
     padding: 10px;
     margin: 5px 0;
     text-align: center;
+    cursor: pointer;
     
 }
 
 .selecionado{
-    background-color: salmon;
-    color: #ccc;
-    border-color: rosybrown;
+    background-color: steelblue !important;
+    color: #ccc !important;
+    border-color: thistle !important;
 }
 
 .c1{
@@ -55,7 +56,7 @@ button{
 
 .caixa{
     border: 4px solid black;
-    background-color: #fff;
+    background-color: #b4b4b4;
     padding: 10px;
     display: flex;
     flex-flow: column nowrap;
@@ -79,12 +80,6 @@ button{
     margin: 5px;
 }
 
-.comandos{
-    width: 300%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
 
 #caixaNovoCurso input{
     margin: 10px;
