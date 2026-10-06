@@ -60,11 +60,9 @@ btnCursoSelecionado.addEventListener('click',(eve)=>{
 
 
 btnAdicionarCurso.addEventListener('click', ()=>{
-     if(nomeCurso.value.length==0){
-         alert('digite uma cena seu palhaço')
-     }else{
-        
-     }
+    //  if(nomeCurso.value.length==0){
+    //      alert('digite uma cena seu palhaço')
+    //  }
 })
 
 
