@@ -14,7 +14,7 @@ let indice = 0
 const tirarSelecao=()=>{
     const cursoSelecionado=[...document.querySelectorAll('.selecionado')]
     cursoSelecionado.map((el)=>{
-        el.classList.remove('selecionado')
+    el.classList.remove('selecionado')
     })
 }
 
@@ -43,36 +43,34 @@ const cursoSelecionado =()=>{
             return cursoSelecionado[0]
 
     }
-        
-
-
+    
 btnCursoSelecionado.addEventListener('click',(eve)=>{
-
     try{
-        const cursoSelecionado=rs.parentNode.previousSibling.textContent
         alert('curso Selecionado '+ cursoSelecionado().innerHTML)
     }catch(ex){
         alert('Selecione um curso')
     }
-    const cursoSelecionado=rs.parentNode.previousSibling.textContent
-    alert('curso selecionado:'+cursoSelecionado)
 
     })
 
    
     btnRemoveCurso.addEventListener('click',(eve)=>{
-    const rs=radioSelecionado()
-    const cursoSelecionado=rs.parentNode.parentNode
-    cursoSelecionado.remove()
+        const cs=cursoSelecionado()
+        if(cs!=undefined){
+            
+            cs.remove()
+        }else{
+            alert('Selecione um curso')
+        }
+        
+
 })
 
 btnAdicionarNovoCursoAntes.addEventListener('click',(evt)=>{
-    const rs=radioSelecionado()
     try{
         if(nomeCurso.value!==''){
-        const cursoSelecionado=rs.parentNode.parentNode
         const novoCurso=criarNovoCurso(nomeCurso.value)
-        caixaCursos.insertBefore(novoCurso,cursoSelecionado)
+        caixaCursos.insertBefore(novoCurso,cursoSelecionado())
         }else{
             alert('Digite o nome do curso')
         }
@@ -82,18 +80,14 @@ btnAdicionarNovoCursoAntes.addEventListener('click',(evt)=>{
 })
 
 btnAdicionarNovoCursoDepois.addEventListener('click',(evt)=>{
-     const rs=radioSelecionado()
     try{
          if(nomeCurso.value!==''){
-        const cursoSelecionado=rs.parentNode.parentNode
+        
         const novoCurso=criarNovoCurso(nomeCurso.value)
-        caixaCursos.insertBefore(novoCurso,cursoSelecionado)
+        caixaCursos.insertBefore(novoCurso,cursoSelecionado().nextSibling)
         }else{
             alert('Digite o nome do curso')
         }
-        const cursoSelecionado=rs.parentNode.parentNode
-        const novoCurso=criarNovoCurso(nomeCurso.value)
-        caixaCursos.insertBefore(novoCurso,cursoSelecionado.nextSibling)
     }catch(ex){
         alert('Selecione um curso')
     }
