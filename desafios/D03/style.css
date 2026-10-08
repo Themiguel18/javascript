@@ -23,7 +23,7 @@
 
 .azul{
     border-color: blue;
-    background-color: aquamarine;
+    background-color: rgb(210, 255, 240);
 }
 
 .vermelho{
@@ -35,8 +35,10 @@ button{
     width: 100px;
     padding: 5px 0;
     margin-top: 10px;
-    background-color: transparent;
+    background-color: rgb(5, 54, 94);
+    color:white;
     border: 1px solid black;
+    border-radius: 10px;
     cursor: pointer;
 
 }

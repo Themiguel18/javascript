@@ -1,4 +1,11 @@
+const p_array = document.querySelector('#array')
+const txt_pesquisar=document.querySelector9('#txt_pesquisar')
+const btn_pesquisar=document.querySelector9('#txt_pesquisar')
+const resultado=document.querySelector('#resultado')
 
+const elementos_array=[10,5,8,2,9,15,20]
+
+p_array.innerHTML=elementos_array
 
 
 
