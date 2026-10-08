@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+       <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Original+Surfer&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div id="caixa_array" class="caixa verde">
+        <p>Array</p>
+        <p id="array"></p>
+    </div>
+    <div id="caixa_pesquisar" class="caixa azul">
+        <label for="txt_pesquisar">Pesquisar Por</label>
+        <input type="text" name="txt_pesquisar" id="txt_pesquisar">
+        <button id="btnPesquisar">Pesquisar</button>
+    </div>
+    <div id="caixa_resultado" class="caixa vermelho">
+        <p>Resultado:</p>
+        <p id="resultado"></p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
