@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body,html{
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section.hero{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    width: 50%;
+    height: 350px;
+    padding: 0 50px;
+}
+
+.hero div.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 5px;
+
+}
+
+hr{
+    margin-top: 10px;
+}
+.header button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header button a{
+    text-decoration: none;
+    color: black;
+}
+
+.header button:hover{
+    color: brown;
+}
+
+.cadastro input{
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+.cadastro input:focus{
+    border: 1px solid tan;
+    outline: none;
+}
+
+.cadastro h1{
+    margin: 10px;
+}
+
+.cadastro button{
+    background-color: tan;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+ p{
+    font-size: .7em;
+    margin: 10px;
+    text-align: justify;
+}
