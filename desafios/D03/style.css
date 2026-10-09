@@ -17,18 +17,18 @@
 }
 
 .verde{
-    border-color: green;
-    background-color: white;
+    border-color: green !important;
+    background-color: rgb(185, 255, 185) !important;
 }
 
 .azul{
-    border-color: blue;
-    background-color: rgb(210, 255, 240);
+    border-color: blue !important;
+    background-color: rgb(210, 255, 240) !important;
 }
 
 .vermelho{
-    border-color: red;
-    background-color: white;
+    border-color: red !important;
+    background-color: rgb(245, 209, 209) !important;
 }
 
 button{
@@ -41,16 +41,4 @@ button{
     border-radius: 10px;
     cursor: pointer;
 
-}
-
-#caixa_pesquisar input{
-    padding: 5px 0;
-    border-radius: 5px;
-    border: 1px solid black;
-    width: 300px;
-}
-
-#caixa_pesquisar input:focus{
-    border: 2px solid teal;
-    outline: none;
 }
