@@ -10,12 +10,15 @@
 body,html{
     width: 100vw;
     height: 100vh;
+   
 }
 
 main{
     width: 100%;
     height: 100%;
-    background-color: whitesmoke;
+    background: url(fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -23,13 +26,16 @@ main{
 }
 
 section.hero{
-    border: 1px solid black;
-    border-radius: 10px;
     width: 100%;
     text-align: center;
-    width: 50%;
-    height: 350px;
-    padding: 0 50px;
+     border: 1px solid rgb(255, 255, 255 ,0.3);
+    border-radius: 10px;
+    width: 320px;
+    padding: 30px;
+    color: #fff;
+    background-color: rgb(255, 255, 255 ,0.08);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .hero div.header{
@@ -77,10 +83,11 @@ hr{
 
 .cadastro h1{
     margin: 10px;
+    color: black;
 }
 
 .cadastro button{
-    background-color: tan;
+    background-color: rgb(1, 136, 122);
     color: white;
     border: 1px solid black;
     border-radius: 10px;
