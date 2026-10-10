@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 600px) {
+    div.botao button{
+        
+        padding: 15px 100px;
+        
+    }   
+    
+    div.check .caixa{
+        flex-flow: column-reverse nowrap;
+
+    }
+
+}
