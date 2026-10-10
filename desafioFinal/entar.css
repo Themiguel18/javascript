@@ -27,14 +27,25 @@ section.hero{
     background-color: rgb(255, 255, 255 ,0.08);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    text-align: center;
-    
-
 }
 
 div.container{
     width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
    
+}
+
+div.cabeca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabeca{
+    font-size: 1.5em;
 }
 
 .hero h1{
@@ -64,6 +75,7 @@ div.check{
 .check div.caixa{
     display: flex;
     align-items: center;
+    justify-content: center;
     justify-content: first baseline;
     gap: 3px;
 } 
