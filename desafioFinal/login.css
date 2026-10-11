@@ -95,8 +95,14 @@ hr{
     cursor: pointer;
 }
 
+button a{
+    text-decoration: none;
+    color: white;
+}
+
  p{
     font-size: .7em;
     margin: 10px;
     text-align: justify;
 }
+
