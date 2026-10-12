@@ -86,3 +86,10 @@ div.botao button{
     margin-top: 30px;
     cursor: pointer;
 }
+
+div.botao button:hover{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: ease-out .5s;
+}
