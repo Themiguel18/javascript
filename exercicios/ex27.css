@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.caixa{
+    width: 300px;
+    padding: 10px;
+    border: 4px solid black;
+    border-radius: 20px;
+}
