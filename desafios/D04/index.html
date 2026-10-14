@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.container{
+            display: flex;
+            gap: 5px;
+        }
+        .caixa2, .caixa1{
+            border: 1px solid black;
+            width: 200px;
+            height: 400px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .elemento{
+            margin: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 5px;
+            cursor: pointer;
+        }
+       
+    </style>
+</head>
+<body>
+     <div class="container">
+         <div class="caixa1" id="caixa2">
+            <div id="curso1" class="elemento">HTML</div>
+            <div id="curso2" class="elemento">CSS</div>
+            <div id="curso3" class="elemento">JS</div>
+            <div id="curso4" class="elemento">Java</div>
+            <div id="curso5" class="elemento">C++</div>
+             </div> 
+         
+             <div class="caixa2" id="caixa2">
+         
+             </div>
+     </div>
+    <button id="copiar">copiar</button>
+    <script src="index.js"></script>
+</body>
+</html>
