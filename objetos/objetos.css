@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+input{
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+div{
+    width: 180px;
+    
+    text-align: center;
+}
+
+button{
+    margin-top: 10px;
+    width: 100%;
+    background-color: rgb(100, 99, 99);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#res{
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+}
