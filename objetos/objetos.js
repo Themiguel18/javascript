@@ -15,6 +15,12 @@
             this.velmax=100
         }
     }
+    getNome(){
+        return this.nome
+    }
+    getInfo(){
+        return [this.nome, this.tipo, this.velmax]
+    }
     info(){
         console.log(`Nome: ${this.nome}`)
         console.log(`Tipo: ${this.tipo}`)
@@ -28,7 +34,8 @@
  let c3=new carro('Tundra', 3)
  let c4=new carro('Duster', 4)
 
-c1 .info()
-c2.info()
+// c1 .info()
+// c2.info()
+console.log(c1.getInfo())
 
  
