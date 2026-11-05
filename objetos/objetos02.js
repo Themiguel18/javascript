@@ -1,20 +1,20 @@
- class Pessoa{
-    constructor(pnome, pidade){
-        this.nome=pnome
-        this.idade=pidade
-       
-    }
-    getNome(){
+ function Pessoa(pnome, pidade){
+    this.nome=pnome,
+    this.idade=pidade,
+    this.getNome=function(){
+       return this.nome
+    },
+    this.getNome=function(){
         return this.nome
-    }
-    getidade(){
+    },
+    this.getIdade=function(){
         return this.idade
-    }
-    setNome(nome){
+    },
+    this.setNome=function(nome){
         this.nome=nome
-    }
+    },
  
-    info(){
+    this.info=function(){
         console.log(`Nome..: ${this.nome}`)
         console.log(`Idade.: ${this.idade}`)
         console.log('-----------------')
@@ -30,7 +30,10 @@ const res=document.getElementById('res')
 const addPessoa=()=>{
     res.innerHTML=''
     pessoas.forEach((pessoa,index)=>{
-        res.innerHTML+=`<p>Nome: ${pessoa.getNome()}</br> Idade: ${pessoa.getidade()}</p>`
+        const div=document.createElement('div')
+        div.setAttribute('class', 'pessoa')
+        div.innerHTML=`<p>Nome: ${pessoa.getNome()}</br> Idade: ${pessoa.getIdade()}</p>`
+        res.appendChild(div)
     })
     
 }
