@@ -29,12 +29,10 @@ const res=document.getElementById('res')
 
 const addPessoa=()=>{
     res.innerHTML=''
-    pessoas.map((pessoa)=>{
-        const div=document.createElement('div')
-        div.setAttribute('class', 'pessoa')
-        div.innerHTML=`Nome: ${pessoa.getNome()} </br>Idade: ${pessoa.getidade()}`
-        res.appendChild(div)
+    pessoas.forEach((pessoa,index)=>{
+        res.innerHTML+=`<p>Nome: ${pessoa.getNome()}</br> Idade: ${pessoa.getidade()}</p>`
     })
+    
 }
 
 btn_adicionar.addEventListener('click',(evt)=>{
