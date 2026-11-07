@@ -33,20 +33,34 @@ const addPessoa=()=>{
         const div=document.createElement('div')
         div.setAttribute('class', 'pessoa')
         div.innerHTML=`<p>Nome: ${pessoa.getNome()}</br> Idade: ${pessoa.getIdade()}</p>`
+        
         res.appendChild(div)
-    })
+
+        
+    })    
     
 }
+
+
+
+  
 
 btn_adicionar.addEventListener('click',(evt)=>{
     const nome = document.querySelector('#f_nome')
     const idade=document.querySelector('#f_idade')
+    if(nome.value=="" || idade.value==""){
+        alert('Preencha todos os campos')
+        return
+    }
         const p=new Pessoa(nome.value,idade.value)
         pessoas.push(p)
         nome.value=""
         idade.value=""
         nome.focus()
        addPessoa()
+       
+       
         
 
 })
+
