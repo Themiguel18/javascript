@@ -40,3 +40,19 @@ body, html{
     color: #000;
     cursor: pointer;
 }
+
+#btn{
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #000;
+    text-align: center;
+    background-color: snow;
+    color: #000;
+    cursor: pointer;
+}
+
+#btn:hover{
+    background-color: #000;
+    color: snow;
+    transition: 0.5s;
+}

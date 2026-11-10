@@ -1,6 +1,7 @@
 const curso=[...document.querySelectorAll('.curso')];
-const btn=document.querySelector('#btn');
+const btn=document.getElementById('btn');
 
 btn.addEventListener('click',()=>{
-    curso.pop()
+     let removido=curso.pop();        
+     removido.remove();
 })
