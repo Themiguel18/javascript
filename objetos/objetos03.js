@@ -3,7 +3,7 @@ class Carro{ // Classe pai
         this.nome=nome
         this.portas=portas
         this.ligado=false
-        this.vel=0
+        this.vel=0 
         this.cor=undefined
     }
     ligar=function(){
